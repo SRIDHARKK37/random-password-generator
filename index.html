@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div class="controls">
+            <label for="length">Password Length:</label>
+            <input type="number" id="length" value="12" min="1" max="128">
+        </div>
+        <div class="controls">
+            <label><input type="checkbox" id="letters" checked> Letters</label>
+            <label><input type="checkbox" id="digits" checked> Digits</label>
+            <label><input type="checkbox" id="symbols" checked> Symbols</label>
+        </div>
+        <div class="password-display" id="passwordDisplay">Click Generate</div>
+        <div class="buttons">
+            <button onclick="generatePassword()">Generate Password</button>
+            <button onclick="copyToClipboard()">Copy to Clipboard</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
